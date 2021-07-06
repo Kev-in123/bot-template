@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-class Basic(commands.Cog): #basic cog
+class Fun(commands.Cog): #basic cog
     def __init__(self, bot):
         self.bot = bot
     
@@ -14,4 +14,4 @@ class Basic(commands.Cog): #basic cog
         return await ctx.send(text)
 
 def setup(bot): # this part is required for every cog
-    bot.add_cog(Basic(bot))
+    bot.add_cog(Fun(bot))
