@@ -1,15 +1,15 @@
 import discord
 from discord.ext import commands
 
-class Fun(commands.Cog): #basic cog
+class Fun(commands.Cog): # basic cog
     def __init__(self, bot):
         self.bot = bot
     
-    @commands.command() #basic command
+    @commands.command() # basic command
     async def hi(self, ctx):
         return await ctx.send("Hello")
     
-    @commands.command() #a command with arguments, invoked like !say <text>
+    @commands.command() # a command with arguments, invoked like !say <text>
     async def say(self, ctx, text):
         return await ctx.send(text)
 
