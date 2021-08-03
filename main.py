@@ -7,7 +7,7 @@ bot = commands.Bot(command_prefix="!")
 
 #basic command
 @bot.command()
-async def command(ctx):
+async def hi(ctx):
     await ctx.send("Hi") # sends the message `Hi` to the invoking channel.
 
 # loading cogs, you can skip this part if you dont use cogs
