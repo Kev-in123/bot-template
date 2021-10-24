@@ -10,9 +10,9 @@ bot = commands.Bot(command_prefix="!")
 async def hi(ctx):
     await ctx.send("Hi") # sends the message `Hi` to the invoking channel.
 
-# loading cogs, you can skip this part if you dont use cogs
+# loading all the cogs, you can skip this part if you dont use cogs or manually load all the cogs
 for cog in os.listdir("cogs"):
   if cog.endswith(".py"):
     bot.load_extension(f"cogs.{cog[:-3]}")
 
-bot.run("token") # running a bot like this is not recommended but for the sake of this template, its gonna be like this
+bot.run("token") # running a bot like this is not recommended (token is visible in the source) but for the sake of this template, it's gonna be like this
