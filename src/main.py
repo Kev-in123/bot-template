@@ -11,4 +11,6 @@ async def hi(ctx):
 #loading the cog
 bot.load_extension("cogs.fun")
 
-bot.run("token") # running a bot like this is not recommended (token is visible in the source) but for the sake of this template, it's gonna be like this
+bot.run("TOKEN") # change `TOKEN` tou your bot's token
+
+# running a bot like this is not recommended (token is visible in the source) but for the sake of this template, it's gonna be like this
